@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.menu {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease 0.1s, background-color 0.3s ease 0.1s, text-decoration 0.3s ease 0.1s;
+}
+.menu a:hover {
+  color: #2563eb;
+  background-color: #444;
+  text-decoration: underline;
+}
+
+@supports (position: sticky) {
+  .menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.servicios {
+  text-align: center;
+  padding: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 25px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ccc;
+}
+.tarjeta h3 {
+  color: #2563eb;
+}
+
+@-webkit-keyframes aparecer {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.tarjeta {
+  -webkit-animation: aparecer 0.8s ease 0.1s both;
+  -moz-animation: aparecer 0.8s ease 0.1s both;
+  animation: aparecer 0.8s ease 0.1s both;
+}
+
+/*# sourceMappingURL=estilos.css.map */
